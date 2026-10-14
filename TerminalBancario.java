@@ -1,6 +1,6 @@
 import java.util.Scanner;
 
-public class terminalBancario2 {
+public class TerminalBancario {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         
