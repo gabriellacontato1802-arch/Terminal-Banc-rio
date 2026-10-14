@@ -30,7 +30,7 @@ public class TerminalBancario {
                     System.out.print("Digite o valor do depósito: R$ ");
                     double valorDeposito = scanner.nextDouble();
                     
-                    // Regra de Negócio: Aceitar apenas valores estritamente maiores que zero (valor > 0)[cite: 1]
+                    // Regra de Negócio: Aceitar apenas valores estritamente maiores que zero (valor > 0)
                     if (valorDeposito > 0) {
                         saldo += valorDeposito;
                         System.out.printf("Depósito realizado com sucesso! Novo saldo: R$ %.2f\n", saldo);
@@ -44,12 +44,12 @@ public class TerminalBancario {
                     System.out.print("Digite o valor do saque: R$ ");
                     double valorSaque = scanner.nextDouble();
                     
-                    // Regra de Negócio: Validar se é positivo e se não excede o saldo atual (valor <= saldo)[cite: 1]
+                    // Regra de Negócio: Validar se é positivo e se não excede o saldo atual (valor <= saldo)
                     if (valorSaque > 0 && valorSaque <= saldo) {
                         saldo -= valorSaque;
                         System.out.printf("Saque realizado com sucesso! Novo saldo: R$ %.2f\n", saldo);
                     } else if (valorSaque > saldo) {
-                        // Exibir "Saldo Insuficiente"[cite: 1]
+                        // Exibir "Saldo Insuficiente"
                         System.out.println("Saldo Insuficiente");
                     } else {
                         System.out.println("Valor inválido para saque.");
@@ -57,7 +57,7 @@ public class TerminalBancario {
                     break;
                     
                 case 4:
-                    // Regra de Negócio: Se o usuário digitar 4, ajustar a variável contadora do 'for' para interromper o laço[cite: 1]
+                    // Regra de Negócio: Se o usuário digitar 4, ajustar a variável contadora do 'for' para interromper o laço
                     System.out.println("Atendimento encerrado. Obrigado!");
                     i = 5; 
                     break;
